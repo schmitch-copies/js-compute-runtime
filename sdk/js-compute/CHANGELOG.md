@@ -16,6 +16,20 @@
 - Store the Object-Store key string into a native object to avoid it becoming garbage collected before being used within `ObjectStore.prototype.get` or `ObjectStore.prototype.put` (([381242](https://github.com/fastly/js-compute-runtime/commit/3812425a955e52c2fd7229e762ef3e691cb78745))
 
 
+## [0.6.0](https://github.com/schmitch/js-compute-runtime/compare/js-compute-v0.5.2...js-compute-v0.6.0) (2022-09-27)
+
+
+### Features
+
+* add btoa and atob native implementations ([#227](https://github.com/schmitch/js-compute-runtime/issues/227)) ([8b8c31f](https://github.com/schmitch/js-compute-runtime/commit/8b8c31fa9ad70337b1060a3242b8e3495ae47df3))
+* Add ConfigStore class ([d605df9](https://github.com/schmitch/js-compute-runtime/commit/d605df94845d5a47954066c3394dd5ba7493b032))
+
+
+### Bug Fixes
+
+* explicitly declare void as the return type for functions which return nothing - to allow our package to work with typescript's `strict:true` option ([#253](https://github.com/schmitch/js-compute-runtime/issues/253)) ([f6e193c](https://github.com/schmitch/js-compute-runtime/commit/f6e193cfb20b2f83654ea6493d313d55a572685f))
+* Fix our api website implementation ([#229](https://github.com/schmitch/js-compute-runtime/issues/229)) ([a54a137](https://github.com/schmitch/js-compute-runtime/commit/a54a1371f8a63d1ac11a6f8ecb1d95e6baf96174))
+
 ## 0.5.2 (2022-09-02)
 
 ### Fixed
